@@ -3,7 +3,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     alert('Thank you for your message!');
   });
   
-  //to implement smooth scrolling to internal links
+  // Smooth scroll for internal links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -14,7 +14,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     });
   });
   
-  //fade-in animation on scroll
+  // Add fade-in animation on scroll
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -28,12 +28,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
     observer.observe(section);
   });
   
-  //class for fade-in effect
+  // Add class for fade-in effect
   document.querySelectorAll('section').forEach(section => {
     section.classList.add('hidden');
   });
   
-  //hamburger menu (for small screen size)
+  // Toggle hamburger menu
   const toggleButton = document.querySelector('.toggle-button');
   const navbarLinks = document.querySelector('.navbar-links');
   
