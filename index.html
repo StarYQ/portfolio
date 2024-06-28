@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db6fd27130.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">Arnab Bhowmik</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#about" class="nav-link active">About Me</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Arnab Bhowmik</h1>
+            <p>I'm a rising sophomore and aspiring developer studying computer science  
+              <br>at Stony Brook University.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>placeholder for about me text idk wat to put
+          <br>(might remove)
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <div class="project-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="project-info">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="project-info">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        <!-- Add more project cards as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
