@@ -19,9 +19,9 @@
             </a>
             <div class="navbar-links">
                 <ul>
-                    <li><a href="index.html" class="nav-link" target="_self">Home</a></li>
-                    <li><a href="projects.html" class="nav-link" target="_self">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link" target="_self">Contact</a></li>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +42,45 @@
             </div>
         </div>
     </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <div class="project-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="project-info">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="project-info">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        <!-- extra project cards when needed -->
+    </section>
 
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="button-container">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

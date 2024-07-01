@@ -7,8 +7,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
       e.preventDefault();
-      const target = this.getAttribute('href') === '#' ? 'html' : this.getAttribute('href');
-      document.querySelector(target).scrollIntoView({
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth',
           block: 'start'
       });
