@@ -184,12 +184,7 @@ section {
     text-align: center;
 }
 
-#about {
-    background: #1c1c1c;
-    color: #ddd;
-}
-
-#projects {
+#projects, #home {
     background: #282828;
     display: flex;
     flex-wrap: wrap;
