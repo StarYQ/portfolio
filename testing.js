@@ -13,7 +13,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
-
 //fade-in animation for scroll
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
